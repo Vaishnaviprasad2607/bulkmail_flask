@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail dispatcher</title>
+</head>
+<body style="background-color: pink;color:black;height:300px">
+  {% if success:%}
+   <script>alert('Yours mails are sent');</script>
+   {%endif%}
+    <h1 style="background-color:black;color:white;text-align:center;height:50px">MASS MAIL DISPATCHER</h1>
+   <h1> Step 1:</h1>
+   <form action="/uploaded" enctype="multipart/form-data" method="POST"></form>
+ <h1 style="color: black;font-size: 20px;" >Upload CSV file</h1>
+   <input type="file" id="file" name="file1"accept=".csv" style="width: 1240px;height:30px;"required/></input> 
+   <button type="submit" class="btn btn-success" style="background-color:blue;height:25px"><a href="/uploaded" style=color:black> Submit</a></button> </form>
+   <br>
+   <br>
+<h1> Step 2:</h1>
+<h2>Purify emails</h2>
+<button type="button" class="btn btn-primary"  style="background-color:blue;height:25px"><a href="/purify1"style=color:black>PURIFIED EMAILS LIST</a></button> 
+<br><br>
+<h1> Step 3:</h1>
+<h2>Send emails</h2>
+<!-- <button type="submit" class="btn btn-primary" action="/purify">PURIFY EMAIL</button> -->
+<button type="button" class="btn btn-primary"  style="background-color:blue;height:25px"><a href="/send"style=color:black>SEND E-MAIL</a></button> 
+</body>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(240, 238, 130)">
+     <h1 style="text-align:center;border: 20px;background-color:pink;color:black">PURIFIED EMAILS</h1>
+     <div style="margin: 10px;">
+    {% for item in plist %}
+    <h3 style="color:blue;">{{item}}</h3> 
+    {% endfor %}
+</div>
+    <h4 style="color:black;"><a href="/invalid">CLICK HERE TO CHECK INVALID EMAILS</a></h4>
+</body>
+</html>
